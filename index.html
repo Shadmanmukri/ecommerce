@@ -22,8 +22,91 @@
 </head>
 
 <body>
+    <!-- <input type="checkbox" id="check">
+    <nav class="mb-5">
+        <div class="icon1">
+            <img src="main-logo.png" height="40px" alt="">
+        </div>
+        <div class="search_box">
+            <input type="search" placeholder="I'm Searching for...">
+            <span id="span1" class="fa fa-search"></span>
+        </div>
+        <ol>
+            <li><a href="#">
+                    <h3>880033265</h3>
+                    <h6>Support 24/7</h6>
+                </a></li>
+            <li> <a href="#"> <i class="fa-regular fa-user fa-lg"></i></a></li>
+            <li> <a href="#"> <i class="fa-regular fa-heart fa-lg"></i></a></li>
+            <li> <a href="#"> <i class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
+            <li> <a href="#">
+                    <h4>YourCart </h4>
+                    <h6> $2650.59 </h6>
+                </a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+
+    </nav> -->
+
+
+
+    <!-- TOGGLE NAVBAR -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <img src="main-logo.png" class="ps-4" height="40px" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="search-bar">
+                        <div class="dropdown">
+                            <button class="btn-nav btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ALL CATEGORIES
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Veggies</a></li>
+                                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                                <li><a class="dropdown-item" href="#">Groceries</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="I'm Searching for...">
+                            <i class="fa-solid fa-magnifying-glass ms-2 ps-2"></i>
+                        </div>
+                    </div>
+                    <li class="nav-item ps-5">
+                        <h6>88003326566</h6>
+                        <p class="para">Support 24/7</p>
+                    </li>
+                    <div class="icon-1 ps-5 ">
+                        <i class="fa-regular fa-user fa-lg px-3"></i>
+                        <i class="fa-regular fa-heart fa-lg px-3"></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg px-3"></i>
+
+                    </div>
+                    <li class="car nav-item ps-5 ms-4">
+                        <a class="nav-link" href="#">YourCart <br> $2650.59 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NORMAL NAVBAR -->
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container d-flex pt-4 pb-5 ps-5 ">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars"></i>
+            </label>
             <div class="logo d-flex align-items-center">
                 <img src="main-logo.png" height="40px" alt="">
             </div>
@@ -58,9 +141,21 @@
                 <p class="cart"> Your Cart <br> $2650.59</p>
             </div>
         </div>
-    </nav>
-
-    <div class="slider container-fluid pb-5 mb-3">
+    </nav> -->
+    <div class="menu-bar">
+        <ul>
+            <li ><a href="#"><i class="fa-solid fa-bars me-2"></i>Category</a></li>
+            <li class="bolt"> <a href="#"><i class="fa-solid fa-bolt fa-sm"></i>Deals Today</a></li>
+            <li class="bolt"><a href="#"><i class="fa-solid fa-tag"></i>Special Price</a></li>
+            <li> <a href="#">Fresh</a><i class="fa-solid fa-angle-down ms-2"></i></li>
+            <li><a href="#">Frozen</a><i class="fa-solid fa-angle-down ms-2"></i></li>
+            <li><a href="#">Demos</a><i class="fa-solid fa-angle-down ms-2"></i></li>
+            <li><a href="#">Shop</a><i class="fa-solid fa-angle-down ms-2"></i></li>
+            <li><a href="#">Blog</a><i class="fa-solid fa-angle-down ms-2"></i></li>
+            <li><a href="#">Pages</a><i class="fa-solid fa-angle-down ms-2"></i></li>
+        </ul>
+    </div>
+    <div class="slider container-fluid">
         <section class="slider_container">
             <div class="container">
                 <div class="row">
@@ -129,8 +224,8 @@
                                 </div>
 
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
@@ -149,9 +244,9 @@
         </section>
     </div>
 
-    <div class="container mt-5 pb-3">
+    <div class="container">
         <div class="row ">
-            <div class="col-3">
+            <div class="browse col-3">
                 <h3>Browse by category</h3>
 
             </div>
@@ -168,7 +263,7 @@
         <div class="shadman-1 pt-3 mb-5 owl-carousel owl-theme">
             <div class="owl-1 item pt-3 pb-1">
                 <img src="fruit-vegetable.png">
-                <p class="pt-2 pb-2">Fruits & Vegetables</p>
+                <p class="pt-2 pb-2">Fruits & Veggies</p>
             </div>
             <div class="owl-1 item pt-3 pb-1">
                 <img src="bread-1.png">
@@ -204,7 +299,7 @@
 
     <div class="container mt-5 pb-4">
         <div class="row ">
-            <div class="col-3">
+            <div class="few col-3">
                 <h3>Featured Brands</h3>
 
             </div>
@@ -248,7 +343,7 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-xl-3 col-md-3 col-sm-2">
+            <div class="top col-xl-3 col-md-3 col-sm-2">
                 <h3>Top Saver Today</h3>
 
             </div>
@@ -267,7 +362,7 @@
     <div class="container-fluid">
         <div class="top-saver container mb-5">
             <div class="row">
-                <div class="top-products1 col-xl-2 col-lg-2 col-sm-12 col-md-3 px-5 pt-3">
+                <div class="top-products1 col-xl-2 col-lg-2  col-md-3 col-sm-6 col-6 px-5 ">
                     <img src="1.avif">
                     <h6 class="first">Britania Slice</h6>
                     <h6 class="second1"> Healthy Bread x 24</h6>
@@ -277,39 +372,45 @@
                     <h6 class="sixth">Total: $99.0</h6>
                     <button class="myBtn1">Add To Cart</button>
                 </div>
-                <div class="top-products col-xl-2 col-lg-2 col-sm-12 col-md-3 px-5">
+
+                <div class="top-products1 col-xl-2 col-lg-2  col-md-3 col-sm-6 col-6 px-5">
                     <img src="news.png">
                     <h6 class="first">Fresh Chicken</h6>
-                    <h6 class="second">Meat Chicken (10% fat)</h6>
-                    <h6 class="third">450g</h6>
+                    <h6 class="second1">Meat Chicken (10% fat)</h6>
+                    <h6 class="third1">450g</h6>
                     <h6 class="fourth">$59.50</h6>
-                    <h6 class="fifth">Sold:30/40</h6>
+                    <h6 class="fifth1">Sold:30/40</h6>
+                    <h6 class="sixth">Total: $99.0</h6>
+                    <button class="myBtn1">Add To Cart</button>
 
 
 
 
                 </div>
-                <div class="top-products col-xl-2 col-lg-2 col-sm-12 col-md-3 px-5">
+                <div class="top-products1 col-xl-2 col-lg-2  col-md-3  col-sm-6 col-6 px-5">
                     <img src="2.png">
                     <h6 class="first">Harvest Gold</h6>
-                    <h6 class="second">Healthy Bread</h6>
-                    <h6 class="third">800g</h6>
+                    <h6 class="second1">Healthy Bread</h6>
+                    <h6 class="third1">800g</h6>
                     <h6 class="fourth">$12.7</h6>
-                    <h6 class="fifth">Sold:9/20</h6>
+                    <h6 class="fifth1">Sold:9/20</h6>
+                    <h6 class="sixth">Total: $99.0</h6>
+                    <button class="myBtn1">Add To Cart</button>
 
 
 
                 </div>
-                <div class="top-products col-xl-2 col-lg-2 col-md-3 col-sm-12 px-5">
+                <div class="top-products1 col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 px-5">
                     <img src="orange.jpg">
                     <h6 class="first">Oranges</h6>
-                    <h6 class="second">Sweet & Sour</h6>
-                    <h6 class="third">900g</h6>
+                    <h6 class="second1">Sweet & Sour</h6>
+                    <h6 class="third1">900g</h6>
                     <h6 class="fourth">$12.37</h6>
-                    <h6 class="fifth">Sold:18/20</h6>
+                    <h6 class="fifth1">Sold:18/20</h6>
+                    <h6 class="sixth">Total: $99.0</h6>
+                    <button class="myBtn1">Add To Cart</button>
 
                 </div>
-                <div class="col-xl-1 col-lg-1"></div>
                 <div class="contact-us col-xl-3 col-lg-3 col-md-12 pt-3">
                     <h1>15% OFF</h1>
                     <h6 class="pb-4">For new member sign up at <br> the first time.</h6>
@@ -892,6 +993,9 @@
                     items: 3
                 },
                 1050: {
+                    items: 3
+                },
+                1280: {
                     items: 4
                 }
             }
