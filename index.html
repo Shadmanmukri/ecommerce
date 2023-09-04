@@ -7,7 +7,7 @@
     <title>Grocery</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -57,46 +57,46 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <img src="main-logo.png" class="ps-4" height="40px" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <div class="search-bar">
-                        <div class="dropdown">
-                            <button class="btn-nav btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                ALL CATEGORIES
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Veggies</a></li>
-                                <li><a class="dropdown-item" href="#">Fruits</a></li>
-                                <li><a class="dropdown-item" href="#">Groceries</a></li>
-                            </ul>
-                        </div>
-                        <div class="search-box">
-                            <input type="text" id="search-input" placeholder="I'm Searching for...">
-                            <i class="fa-solid fa-magnifying-glass ms-2 ps-2"></i>
-                        </div>
+            <div class="main-logo">
+                <img src="images/main-logo.png" class="ps-4" height="40px" alt="main-logo">
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="search-bar">
+                    <div class="dropdown">
+                        <button class="btn-nav btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ALL CATEGORIES
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Veggies</a></li>
+                            <li><a class="dropdown-item" href="#">Fruits</a></li>
+                            <li><a class="dropdown-item" href="#">Groceries</a></li>
+                        </ul>
                     </div>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="I'm Searching for...">
+                        <i class="fa-solid fa-magnifying-glass ms-2 ps-2"></i>
+                    </div>
+                </div>
+                <div class="new1">
                     <li class="nav-item ps-5">
                         <h6>88003326566</h6>
                         <p class="para">Support 24/7</p>
                     </li>
                     <div class="icon-1 ps-5 ">
-                        <i class="fa-regular fa-user fa-lg px-3"></i>
-                        <i class="fa-regular fa-heart fa-lg px-3"></i>
-                        <i class="fa-solid fa-cart-shopping fa-lg px-3"></i>
+                       <a href="login.html"><i class="fa-regular fa-user fa-lg px-3"></i></a>
+                        <a href="wishlist.html"><i class="fa-regular fa-heart fa-lg px-3"></i></a>
+                       <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-lg px-3"></i></a> 
 
                     </div>
                     <li class="car nav-item ps-5 ms-4">
                         <a class="nav-link" href="#">YourCart <br> $2650.59 </a>
                     </li>
-                </ul>
-            </div>
+                </div>
+
+            </ul>
+
+
         </div>
     </nav>
 
@@ -142,20 +142,24 @@
             </div>
         </div>
     </nav> -->
+    <input type="checkbox" id="check">
     <div class="menu-bar">
         <ul>
-            <li ><a href="#"><i class="fa-solid fa-bars me-2"></i>Category</a></li>
-            <li class="bolt"> <a href="#"><i class="fa-solid fa-bolt fa-sm"></i>Deals Today</a></li>
-            <li class="bolt"><a href="#"><i class="fa-solid fa-tag"></i>Special Price</a></li>
-            <li> <a href="#">Fresh</a><i class="fa-solid fa-angle-down ms-2"></i></li>
-            <li><a href="#">Frozen</a><i class="fa-solid fa-angle-down ms-2"></i></li>
-            <li><a href="#">Demos</a><i class="fa-solid fa-angle-down ms-2"></i></li>
-            <li><a href="#">Shop</a><i class="fa-solid fa-angle-down ms-2"></i></li>
-            <li><a href="#">Blog</a><i class="fa-solid fa-angle-down ms-2"></i></li>
-            <li><a href="#">Pages</a><i class="fa-solid fa-angle-down ms-2"></i></li>
+            <li class="bolt"> <a href="#"><i class="sa fa-solid fa-bolt fa-sm me-1"></i>Deals Today</a></li>
+            <li class="bolt"><a href="#"><i class="sa fa-solid fa-tag me-1"></i>Special Price</a></li>
+            <li> <a href="#">Fresh<i class="sa fa-solid fa-angle-down fa-sm ms-1"></i></a></li>
+            <li><a href="#">Frozen<i class="sa fa-solid fa-angle-down fa-sm ms-1"></i></a></li>
+            <li><a href="#">Demos<i class="sa fa-solid fa-angle-down fa-sm ms-1"></i></a></li>
+            <li><a href="#">Shop<i class="sa fa-solid fa-angle-down fa-sm ms-1"></i></a></li>
+            <li><a href="#">Blog<i class="sa fa-solid fa-angle-down fa-sm ms-1"></i></a></li>
+            <li><a href="#">Pages<i class="sa fa-solid fa-angle-down fa-sm ms-1"></i></a></li>
         </ul>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
     </div>
-    <div class="slider container-fluid">
+    <div class="slider container-fluid accordion pb-3">
         <section class="slider_container">
             <div class="container">
                 <div class="row">
@@ -164,61 +168,61 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="img_box">
-                                        <img src="main1.png">
+                                        <img src="images/main1.png" alt="main1"> 
                                         <div class="title">Active Summer with <br> juice milk 300ml</div>
                                         <div class="text">
                                             New arrivals with nature fruits,juice <br> milks, Essential for summer
-                                            <div class="button btn-s1">Shop Now</div>
+                                            <div class="button btn-s1" type="button">Shop Now</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="img_box">
-                                        <img src="main1.png">
+                                        <img src="images/main1.png" alt="main1" >
                                         <div class="title">Active Summer with <br> juice milk 300ml</div>
                                         <div class="text">
                                             New arrivals with nature fruits,juice <br> milks, Essential for summer
-                                            <div class="button btn-s1">Shop Now</div>
+                                            <div class="button btn-s1" type="button">Shop Now</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="img_box">
-                                        <img src="main1.png">
+                                        <img src="images/main1.png" alt="main1">
                                         <div class="title">Active Summer with <br> juice milk 300ml</div>
                                         <div class="text">
                                             New arrivals with nature fruits,juice <br> milks, Essential for summer
-                                            <div class="button btn-s1">Shop Now</div>
+                                            <div class="button btn-s1" type="button">Shop Now</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="img_box">
-                                        <img src="main1.png">
+                                        <img src="images/main1.png" alt="main1">
                                         <div class="title">Active Summer with <br> juice milk 300ml</div>
                                         <div class="text">
                                             New arrivals with nature fruits,juice <br> milks, Essential for summer
-                                            <div class="button btn-s1">Shop Now</div>
+                                            <div class="button btn-s1" type="button">Shop Now</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="img_box">
-                                        <img src="main1.png">
+                                        <img src="images/main1.png" alt="main1">
                                         <div class="title">Active Summer with <br> juice milk 300ml</div>
                                         <div class="text">
                                             New arrivals with nature fruits,juice <br> milks, Essential for summer
-                                            <div class="button btn-s1">Shop Now</div>
+                                            <div class="button btn-s1" type="button">Shop Now</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="img_box">
-                                        <img src="main1.png">
+                                        <img src="images/main1.png" alt="main1">
                                         <div class="title">Active Summer with <br> juice milk 300ml</div>
                                         <div class="text">
                                             New arrivals with nature fruits,juice <br> milks, Essential for summer
-                                            <div class="button btn-s1">Shop Now</div>
+                                            <div class="button btn-s1" type="button">Shop Now</div>
                                         </div>
                                     </div>
                                 </div>
@@ -234,7 +238,7 @@
                             <h2>20% SALE OFF</h2>
                             <p>Synthetic seeds <br> Net 2.0 OZ</p>
                             <div class="col-4">
-                                <div class="button btn-s">Shop Now</div>
+                                <div class="button btn-s" type="button">Shop Now</div>
                             </div>
 
                         </div>
@@ -251,46 +255,44 @@
 
             </div>
             <div class="categories col-2 pt-2 d-flex">
-                <p class="pe-2">All Categories</p><img src="arrow.png" class="pt-1" alt="">
+                <p class="pe-2">All Categories</p><img src="images/arrow.png" alt="arrow" class="pt-1" alt="">
             </div>
-            <div class="col-2">
-
-            </div>
+            
         </div>
     </div>
 
     <div class="container">
         <div class="shadman-1 pt-3 mb-5 owl-carousel owl-theme">
             <div class="owl-1 item pt-3 pb-1">
-                <img src="fruit-vegetable.png">
+                <img src="images/fruit-vegetable.png" alt="fruit-vegetable">
                 <p class="pt-2 pb-2">Fruits & Veggies</p>
             </div>
             <div class="owl-1 item pt-3 pb-1">
-                <img src="bread-1.png">
+                <img src="images/bread-1.png" alt="bread">
                 <p class="pt-2 pb-2">Breads & sweets</p>
             </div>
             <div class="owl-1 item pt-3 pb-1">
-                <img src="seafood.png">
+                <img src="images/seafood.png" alt="seafood">
                 <p class="pt-2 pb-2">Frozen Seafoods</p>
             </div>
             <div class="owl-1 item pt-3 pb-1">
-                <img src="meat.png">
+                <img src="images/meat.png" alt="meat">
                 <p class="pt-2 pb-2">Raw Meats</p>
             </div>
             <div class="owl-1 item pt-3 pb-1">
-                <img src="wine.png">
+                <img src="images/wine.png" alt="wine">
                 <p class="pt-2 pb-2">Drinks</p>
             </div>
             <div class="owl-1 item pt-3 pb-1">
-                <img src="coffe.png">
+                <img src="images/coffe.png" alt="coffee">
                 <p class="pt-2 pb-2">Cofees and Teas</p>
             </div>
             <div class="owl-1 item pt-3 pb-1">
-                <img src="milk.png">
+                <img src="images/milk.png" alt="milk">
                 <p class="pt-2 pb-2">Milk and Dairies</p>
             </div>
             <div class="owl-1 item pt-3 pb-1">
-                <img src="pet-food.png">
+                <img src="images/pet-food.png" alt="pet-food">
                 <p class="pt-2 pb-2">Pet Foods</p>
             </div>
 
@@ -305,7 +307,7 @@
             </div>
             <div class="offers col-2 d-flex pt-2">
                 <p class="pe-2">All Offers</p>
-                <img src="arrow.png" class="pt-1" alt="">
+                <img src="images/arrow.png" class="pt-1" alt="arrow">
             </div>
         </div>
     </div>
@@ -313,28 +315,28 @@
     <div class="container">
         <div class="features owl-carousel mb-5 owl-theme">
             <div class="featured-brands item">
-                <img src="new-1.png">
+                <img src="images/new-1.png" alt="new-1">
                 <h3 class="pt-3">CHIPSPOUCH</h3>
                 <h6>New Snacks Release.</h6>
             </div>
             <div class="featured-brands item">
-                <img src="new-2.png">
+                <img src="images/new-2.png" alt="new-2">
                 <h3 class="pt-3">TEA PACK</h3>
                 <h6>Tea 100% Organic.</h6>
 
             </div>
             <div class="featured-brands item ">
-                <img src=new-3(2).png>
+                <img src=images/new-3(2).png alt="new-3">
                 <h3 class="pt-3">BREADBRAND</h3>
                 <h6>Britania Pack-30% off.</h6>
             </div>
             <div class="featured-brands item">
-                <img src=new-4.png>
+                <img src=images/new-4.png alt="new-4">
                 <h3 class="pt-3">FARMART</h3>
                 <h6>Fresh Chicken Meat.</h6>
             </div>
             <div class="featured-brands item">
-                <img src="new-3(2).png">
+                <img src="images/new-3(2).png" alt="new-5">
                 <h3 class="pt-3">WATER</h3>
                 <h6>Mineral Water.</h6>
             </div>
@@ -343,17 +345,17 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="top col-xl-3 col-md-3 col-sm-2">
+            <div class="top col-xl-3 col-md-3 col-sm-2 col-4">
                 <h3>Top Saver Today</h3>
 
             </div>
-            <div class="top-saver1 col-1 col-md-2 col-sm-2 pt-2">
+            <div class="top-saver1 col-1 col-md-2 col-sm-2 col-4 pt-2">
                 <p class="pe-2">All Offers</p>
-                <img src="arrow.png" class="pt-1" alt="">
+                <img src="images/arrow.png" class="pt-1" alt="arrow">
             </div>
             <div class="top-saver2 col-1 col-md-1 col-sm-1 pt-1 mt-1">
-                <i class="fa-regular fa-clock fa-sm pe-1 pb-1"></i>
-                <h6>Expires in: 06 : 25: 37</h6>
+                <i class="fa-regular fa-clock fa-sm pe-1 pb-1 "></i>
+                <h6 class="pt-1">Expires in: 06 : 25: 37</h6>
             </div>
         </div>
     </div>
@@ -361,9 +363,9 @@
 
     <div class="container-fluid">
         <div class="top-saver container mb-5">
-            <div class="row">
+            <div class="row justify-content-start">
                 <div class="top-products1 col-xl-2 col-lg-2  col-md-3 col-sm-6 col-6 px-5 ">
-                    <img src="1.avif">
+                    <img src="images/1.avif" alt="Bread" loading="lazy">
                     <h6 class="first">Britania Slice</h6>
                     <h6 class="second1"> Healthy Bread x 24</h6>
                     <h6 class="third1">24 pieces/box</h6>
@@ -374,7 +376,7 @@
                 </div>
 
                 <div class="top-products1 col-xl-2 col-lg-2  col-md-3 col-sm-6 col-6 px-5">
-                    <img src="news.png">
+                    <img src="images/news.png" alt="Chicken" loading="lazy">
                     <h6 class="first">Fresh Chicken</h6>
                     <h6 class="second1">Meat Chicken (10% fat)</h6>
                     <h6 class="third1">450g</h6>
@@ -388,7 +390,7 @@
 
                 </div>
                 <div class="top-products1 col-xl-2 col-lg-2  col-md-3  col-sm-6 col-6 px-5">
-                    <img src="2.png">
+                    <img src="images/2.png" alt="Harvest Gold" loading="lazy">
                     <h6 class="first">Harvest Gold</h6>
                     <h6 class="second1">Healthy Bread</h6>
                     <h6 class="third1">800g</h6>
@@ -401,7 +403,7 @@
 
                 </div>
                 <div class="top-products1 col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6 px-5">
-                    <img src="orange.jpg">
+                    <img src="images/orange.jpg" alt="orange" loading="lazy">
                     <h6 class="first">Oranges</h6>
                     <h6 class="second1">Sweet & Sour</h6>
                     <h6 class="third1">900g</h6>
@@ -411,7 +413,7 @@
                     <button class="myBtn1">Add To Cart</button>
 
                 </div>
-                <div class="contact-us col-xl-3 col-lg-3 col-md-12 pt-3">
+                <div class="contact-us col-xl-3 col-lg-4 col-md-12 col-12 pt-3">
                     <h1>15% OFF</h1>
                     <h6 class="pb-4">For new member sign up at <br> the first time.</h6>
                     <div class="sec-1">
@@ -436,26 +438,26 @@
     <div class="ecommerce container-fluid">
         <div class="container mt-5 py-5">
             <div class="row">
-                <div class="col-xl-2 col-lg-2 ">
+                <div class="best col-xl-2 col-lg-12">
                     <h3>Best Seller</h3>
 
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-sm-12 me-5 pe-5 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3  me-5 pe-5 pt-2">
                     <p>Fruits&Vegetables.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-sm-12 me-5 pe-5 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 me-5 pe-5 pt-2">
                     <p>FrozenSeafoods.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-sm-12 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Raw Meats.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-sm-12 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Coffes&Teas.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-sm-12 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Pet Foods.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-sm-12 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Milks&Dairies.</p>
                 </div>
             </div>
@@ -467,8 +469,8 @@
             <div class="shadman-4 ps-5 pt-5 pb-4 owl-carousel owl-theme ">
                 <div class="card1 item">
                     <h6 class="one">Save 15%</h6>
-                    <img src="news.png">
-                    <h4>Chicken Meat</h4>
+                    <img src="images/news.png" alt="Chicken" loading="lazy">
+                    <h4 class="seven">Chicken Meat</h4>
                     <h6 class="two">British Beef</h6>
                     <h6 class="three">450g</h6>
                     <h6 class="four">$59.50</h6>
@@ -476,24 +478,24 @@
 
                 <div class="card1 item">
                     <h6 class="one">Save 19%</h6>
-                    <img src="1.avif">
-                    <h4>Britania slice</h4>
+                    <img src="images/1.avif" alt="Bread" loading="lazy">
+                    <h4 class="seven">Britania slice</h4>
                     <h6 class="two">Healthy Bread</h6>
                     <h6 class="three">24 pieces/box</h6>
                     <h6 class="four">$49.50</h6>
                 </div>
                 <div class="card1 item">
                     <h6 class="one">Save 17%</h6>
-                    <img src="product4.avif" alt="">
-                    <h4>Amul Butter</h4>
+                    <img src="images/product4.avif" alt="Butter" loading="lazy">
+                    <h4 class="seven">Amul Butter</h4>
                     <h6 class="two">Fresh Product</h6>
                     <h6 class="three">500g</h6>
                     <h6 class="four">$39.50</h6>
                 </div>
                 <div class="card1 item">
                     <h6 class="one">Save 19%</h6>
-                    <img src="product5.webp" alt="">
-                    <h4>Amul Cream</h4>
+                    <img src="images/product5.webp" alt="Cream" loading="lazy">
+                    <h4 class="seven">Amul Cream</h4>
                     <h6 class="two">Fresh Cream</h6>
                     <h6 class="three">500g</h6>
                     <h6 class="four">$35.50</h6>
@@ -501,24 +503,24 @@
                 </div>
                 <div class="card1 item">
                     <h6 class="one">Save 19%</h6>
-                    <img src="1.avif">
-                    <h4>Britania slice</h4>
+                    <img src="images/1.avif" alt="Bread" loading="lazy">
+                    <h4 class="seven">Britania slice</h4>
                     <h6 class="two">Healthy Bread</h6>
                     <h6 class="three">24 pieces/box</h6>
                     <h6 class="four">$49.50</h6>
                 </div>
                 <div class="card1 item">
                     <h6 class="one">Save 17%</h6>
-                    <img src="product4.avif" alt="">
-                    <h4>Amul Butter</h4>
+                    <img src="images/product4.avif" alt="Butter" loading="lazy">
+                    <h4 class="seven">Amul Butter</h4>
                     <h6 class="two">Fresh Product</h6>
                     <h6 class="three">500g</h6>
                     <h6 class="four">$39.50</h6>
                 </div>
                 <div class="card1 item">
                     <h6 class="one">Save 17%</h6>
-                    <img src="product5.webp" alt="">
-                    <h4>Amul Cream</h4>
+                    <img src="images/product5.webp" alt="Cream" loading="lazy">
+                    <h4 class="seven">Amul Cream</h4>
                     <h6 class="two">Fresh Cream</h6>
                     <h6 class="three">500g</h6>
                     <h6 class="four">$35.50</h6>
@@ -532,26 +534,26 @@
     <div class="ecommerce container-fluid">
         <div class="container py-5">
             <div class="row">
-                <div class="col-xl-2 col-lg-3">
+                <div class="just col-xl-2 col-lg-12">
                     <h3>Just Landing</h3>
 
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 me-5 pe-5 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3  me-5 pe-5 pt-2">
                     <p>Fruits&Vegetables.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 me-5 pe-5 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 me-5 pe-5 pt-2">
                     <p>FrozenSeafoods.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Raw Meats.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Coffes&Teas.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Pet Foods.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Milks&Dairies.</p>
                 </div>
             </div>
@@ -562,45 +564,45 @@
         <div class="container">
             <div class="shadman-5  pt-5 ps-5 pb-4 owl-carousel owl-theme">
                 <div class="card1 item">
-                    <img src="new1.jpg">
-                    <h4>IceCream</h4>
+                    <img src="images/new1.jpg " alt="IceCream" loading="lazy">
+                    <h4 class="seven">IceCream</h4>
                     <h6 class="two">Choco Chips </h6>
                     <h6 class="three">1kg</h6>
                     <h6 class="four">$19.7</h6>
                 </div>
-                <div class="card1 item"><img src="product5.webp">
-                    <h4>Amul Milk</h4>
+                <div class="card1 item"><img src="images/product5.webp" alt="Milk" loading="lazy">
+                    <h4 class="seven">Amul Milk</h4>
                     <h6 class="two">Fresh Milk</h6>
                     <h6 class="three">1L</h6>
                     <h6 class="four">$19.50</h6>
 
                 </div>
-                <div class="card1 item"><img src="new3.webp" alt="">
-                    <h4>Mother Dairy</h4>
+                <div class="card1 item"><img src="images/new3.webp" alt="Icecream" loading="lazy">
+                    <h4 class="seven">Mother Dairy</h4>
                     <h6 class="two">Rabdi Icecream</h6>
                     <h6 class="three">1kg</h6>
                     <h6 class="four">$29.50</h6>
                 </div>
-                <div class="card1 item"><img src="new4.webp" alt="">
-                    <h4>Amul Paneer</h4>
+                <div class="card1 item"><img src="images/new4.webp" alt="Paneer" loading="lazy">
+                    <h4 class="seven">Amul Paneer</h4>
                     <h6 class="two">Fresh Product</h6>
                     <h6 class="three">200g</h6>
                     <h6 class="four">$15.50</h6>
                 </div>
-                <div class="card1 item"><img src="new5.jpg" alt="">
-                    <h4>Nestle</h4>
+                <div class="card1 item"><img src="images/new5.jpg" alt="Maggi" loading="lazy">
+                    <h4 class="seven">Nestle</h4>
                     <h6 class="two">Masala Maggi</h6>
                     <h6 class="three">500g</h6>
                     <h6 class="four">$5.50</h6>
                 </div>
-                <div class="card1 item"><img src="new3.webp" alt="">
-                    <h4>Mother Dairy</h4>
+                <div class="card1 item"><img src="images/new3.webp" alt="Icecream" loading="lazy">
+                    <h4 class="seven">Mother Dairy</h4>
                     <h6 class="two">Rabdi Icecream</h6>
                     <h6 class="three">1kg</h6>
                     <h6 class="four">$29.50</h6>
                 </div>
-                <div class="card1 item"><img src="product5.webp">
-                    <h4>Amul Milk</h4>
+                <div class="card1 item"><img src="images/product5.webp" alt="Milk" loading="lazy">
+                    <h4 class="seven">Amul Milk</h4>
                     <h6 class="two">Fresh Milk</h6>
                     <h6 class="three">1L</h6>
                     <h6 class="four">$19.50</h6>
@@ -647,26 +649,26 @@
     <div class="ecommerce container-fluid">
         <div class="essen container py-5">
             <div class="row">
-                <div class=" col-xl-3 col-lg-4">
+                <div class="essent col-xl-3 col-lg-12 ">
                     <h3>Essential Products</h3>
 
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 me-5 pe-5 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 me-5 pe-5 pt-2">
                     <p>Fruits&Vegetables.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 me-5 pe-5 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 me-5 pe-5 pt-2">
                     <p>FrozenSeafoods.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Raw Meats.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Coffes&Teas.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Pet Foods.</p>
                 </div>
-                <div class="e-col col-xl-1 col-lg-2 col-md-2 pt-2">
+                <div class="e-col col-xl-1 col-lg-2 col-md-2 col-3 pt-2">
                     <p>Milks&Dairies.</p>
                 </div>
             </div>
@@ -677,49 +679,49 @@
         <div class="container">
             <div class="shadman-5 pt-5 pb-4 ps-5 owl-carousel owl-theme">
                 <div class="card1 item">
-                    <img src="nut1.avif">
-                    <h4>Nutri</h4>
+                    <img src="images/nut1.avif" alt="Kaju" loading="lazy">
+                    <h4 class="seven">Nutri</h4>
                     <h6 class="two">Organic Kaju</h6>
                     <h6 class="three">1kg</h6>
                     <h6 class="four">$19.7</h6>
 
                 </div>
-                <div class="card1 item"><img src="nut2.jpg">
-                    <h4>Aaladin</h4>
+                <div class="card1 item"><img src="images/nut2.jpg" alt="Pista" loading="lazy">
+                    <h4 class="seven">Aaladin</h4>
                     <h6 class="two">Pistachios</h6>
                     <h6 class="three">450g</h6>
                     <h6 class="four">$59.50</h6>
 
                 </div>
-                <div class="card1 item"><img src="nut3(3).webp" alt="">
-                    <h4>Estaa</h4>
+                <div class="card1 item"><img src="images/nut3(3).webp" alt="Masala Kaju" loading="lazy">
+                    <h4 class="seven">Estaa</h4>
                     <h6 class="two">Masala Kaju</h6>
                     <h6 class="three">450g</h6>
                     <h6 class="four">$29.50</h6>
 
                 </div>
-                <div class="card1 item"><img src="nut4.webp" alt="">
-                    <h4>Dry Fruits</h4>
+                <div class="card1 item"><img src="images/nut4.webp" alt="Mixed Fruits" loading="lazy">
+                    <h4 class="seven">Dry Fruits</h4>
                     <h6 class="two">Mixed Fruits</h6>
                     <h6 class="three">500g</h6>
                     <h6 class="four">$39.50</h6>
                 </div>
-                <div class="card1 item"><img src="nut2.jpg">
-                    <h4>Aaladin</h4>
+                <div class="card1 item"><img src="images/nut2.jpg" alt="Pista" loading="lazy">
+                    <h4 class="seven">Aaladin</h4>
                     <h6 class="two">Pistachios</h6>
                     <h6 class="three">450g</h6>
                     <h6 class="four">$59.50</h6>
 
                 </div>
-                <div class="card1 item"><img src="nut5.webp" alt="">
-                    <h4>Shora's</h4>
+                <div class="card1 item"><img src="images/nut5.webp" alt="Almonds" loading="lazy">
+                    <h4 class="seven">Shora's</h4>
                     <h6 class="two">Organic Almonds</h6>
                     <h6 class="three">500g</h6>
                     <h6 class="four">$35.50</h6>
 
                 </div>
-                <div class="card1 item"><img src="nut3(3).webp" alt="">
-                    <h4>Estaa</h4>
+                <div class="card1 item"><img src="images/nut3(3).webp" alt="Masala Kaju" loading="lazy">
+                    <h4 class="seven">Estaa</h4>
                     <h6 class="two">Masala Kaju</h6>
                     <h6 class="three">450g</h6>
                     <h6 class="four">$29.50</h6>
@@ -737,7 +739,7 @@
                 </div>
 
                 <div class="articles col-xl-4 pt-2 d-flex">
-                    <p class="pe-2">All Articles</p> <img src="arrow-2.png" class="pt-1" alt="">
+                    <p class="pe-2">All Articles</p> <img src="images/arrow-2.png" class="pt-1" alt="arrow" loading="lazy">
                 </div>
             </div>
         </div>
@@ -745,10 +747,10 @@
 
 
     <div class="ecommerce container-fluid pb-4">
-        <div class="container  ">
-            <div class="row">
-                <div class="health col-xl-4 col-lg-4 col-md-6 col-sm-12 pt-4 px-4 pb-2 mb-5">
-                    <img src="health1.png" class="img-fluid">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="health  col-xl-4 col-lg-4 col-md-6 col-sm-12 pt-4 px-4 pb-2 mb-5">
+                    <img src="images/health1.png" class="img-fluid" alt="health" loading="lazy">
                     <div class="shadman pt-3">
                         <div class="exp">
                             <h6>EXPERIENCES</h6>
@@ -765,8 +767,8 @@
                     </div>
 
                 </div>
-                <div class="health1 col-xl-4 col-lg-4 col-md-6 col-sm-12 px-4 pt-4 mb-5 pb-2">
-                    <img src="health2.png" class="img-fluid">
+                <div class="health1  col-xl-4 col-lg-4 col-md-6 col-sm-12 px-4 pt-4 mb-5 pb-2">
+                    <img src="images/health2.png" class="img-fluid" alt="health" loading="lazy">
                     <div class="shadman pt-3">
                         <div class="exp">
                             <h6>EXPERIENCES</h6>
@@ -783,17 +785,17 @@
                     </div>
 
                 </div>
-                <div class="col-1"></div>
-                <div class="shop col-xl-3 col-lg-3 col-md-10 col-sm-10 text-center mb-5">
+
+                <div class="shop-index col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 text-center mb-5">
                     <h3 class="pt-5">Shop faster <br> with Famart App.</h3>
                     <p class="pt-3">Available on both iOS & Android.</p>
-                    <img src="apple.png" class="pt-2"><img src="apple2.png" class="pt-2" alt="">
+                    <img src="images/apple.png" alt="app-store" loading="lazy" class="pt-2"><img src="images/apple2.png" class="pt-2" alt="play-store" loading="lazy">
                     <div class="images d-flex justify-content-center ">
                         <div class="img pt-5">
-                            <img src="mobnew.png" class="img-fluid " alt="">
+                            <img src="images/mobnew.png" class="img-fluid " alt="phone">
                         </div>
                         <div class="img-2 pt-5">
-                            <img src="mobnew.png" class="img-fluid " alt="">
+                            <img src="images/mobnew.png" class="img-fluid " alt="phone">
                         </div>
                     </div>
                 </div>
@@ -803,45 +805,46 @@
 
     <div class="icons container mt-5 mb-4">
         <div class="row justify-content-evenly">
-            <div class="new col-xl-2 col-lg-2 col-md-4 col-sm-12">
+            <div class="new col-xl-2 col-lg-2 col-md-4 col-sm-12 col-6 ">
                 <div class="icon">
-                    <img src="free1.png">
+                    <img src="images/free1.png" alt="Free Shipping">
                     <h5>Free Shipping</h5>
                 </div>
                 <h6>For all orders over $200</h6>
             </div>
-            <div class="new col-xl-2 col-lg-2 col-md-4 col-sm-12">
+            <div class="new col-xl-2 col-lg-2 col-md-4 col-sm-12 col-6">
                 <div class="icon">
-                    <img src="free2.png" alt="">
+                    <img src="images/free2.png" alt="Returns">
                     <h5>1 & 1 Returns</h5>
                 </div>
                 <h6>Cancellation after 1 day</h6>
 
             </div>
-            <div class="new col-xl-2 col-lg-2 col-md-4 col-sm-12">
+            <div class="new col-xl-2 col-lg-2 col-md-4 col-sm-12 col-6">
                 <div class="icon">
-                    <img src="free3.png" alt="">
+                    <img src="images/free3.png" alt="Payment">
                     <h5>100% Secure Payment</h5>
                 </div>
                 <h6>Gurantee secure payment</h6>
 
             </div>
-            <div class="support col-xl-2 col-lg-2 col-md-4 col-sm-12">
+            <div class="support col-xl-2 col-lg-2 col-md-4 col-sm-12 col-6">
                 <div class="icon">
-                    <img src="free4.png" alt="">
+                    <img src="images/free4.png" alt="Support">
                     <h5>24/7 Dedicated Support</h5>
                 </div>
                 <h6>Anytime & anywhere</h6>
 
             </div>
-            <div class="discount col-xl-2 col-lg-2 col-md-4 col-sm-12">
+            <div class="discount col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
                 <div class="icon">
-                    <img src="free5.png" alt="">
+                    <img src="images/free5.png" alt="Offers">
                     <h5>Daily Offers</h5>
                 </div>
                 <h6>Discount up to 70% OFF</h6>
 
             </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
     <hr>
@@ -858,25 +861,25 @@
                 <p>959 Homested Street Eastlake, NYC <br>
                     support@farmart.com</p>
             </div>
-            <div class="description-1 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+            <div class="description-1 col-xl-2 col-lg-2 col-md-2 col-sm-12 col-6">
                 <h3>Useful Links</h3>
                 <p>About Us <br> Contact <br> Help Center
                     <br> Career <br> Policy <br> Flash Sale <br> Official <br>
                     Sitemap
                 </p>
             </div>
-            <div class="description-1 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+            <div class="description-1 col-xl-2 col-lg-2 col-md-2 col-sm-12 col-6">
                 <h3>Help Center</h3>
                 <p>Payments <br> Shipping <br> Product
                     Returns <br> FAQ <br> Checkout <br> Other Issues</p>
             </div>
-            <div class="description-1 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+            <div class="description-1 col-xl-2 col-lg-2 col-md-2 col-sm-12 col-6">
                 <h3>Farmart Business</h3>
                 <p>Sell On Farmart <br> Affiliate Program
                     <br> Our Suppliers <br> Accessibility <br> Advertise With Us
                 </p>
             </div>
-            <div class="description-1 col-xl-3 col-lg-2 col-md-2 col-sm-12">
+            <div class="description-1 col-xl-3 col-lg-2 col-md-2 col-sm-12 col-12">
                 <h3>Farmart Business</h3>
                 <p>Register now on
                     promotions and coupons <br> Don't worry!We not spam.</p>
@@ -890,20 +893,10 @@
 
     <div class="footer container">
         <div class="row">
-            <div class="col-2">
+            <div class="foot col-xl-3 col-lg-3 col-md-6  col-12">
                 <p>2021 Farmart All Rights Reserved</p>
             </div>
-            <div class="col-2"></div>
-            <div class="col-4">
-                <i class="fa-brands mx-2 fa-cc-paypal fa-xl"></i><i class="fa-brands mx-2 fa-cc-mastercard fa-xl"></i><i
-                    class="fa-brands mx-2 fa-cc-visa fa-xl"></i><i class="fa-brands mx-2 fa-wordpress fa-xl"></i><i
-                    class="fa-brands fa-discord mx-2 fa-xl"></i>
-
-            </div>
-            <div class="col-1">
-
-            </div>
-            <div class="col-3">
+            <div class="col-xl-3 col-lg-3 col-md-6  col-12 ">
                 <h6>Stay connected:<i class="fa-brands px-1 fa-facebook"></i><i class="fa-brands px-1 fa-twitter"></i><i
                         class="fa-brands px-1 fa-google-plus-g"></i><i class="fa-brands px-1 fa-youtube"></i></h6>
             </div>
@@ -1056,7 +1049,6 @@
                 }
             }
         })
-
 
     </script>
 </body>
