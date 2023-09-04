@@ -42,7 +42,6 @@
     display: none;
 }
 input[type="checkbox"]{
-    -webkit-appearance: none;
     display: none;
 } 
 
@@ -280,7 +279,7 @@ input[type="checkbox"]{
     .menu-bar ul{
         display: flex;
         flex-direction: column;
-        background:#ffffff;
+        background:#fbfbfb;
         width: 100%;
         height: 0;
         visibility: hidden;
@@ -293,7 +292,7 @@ input[type="checkbox"]{
         margin: 8px;
     }
     .menu-bar li a{
-        color: #000;
+        color: #070707;
         font-size: 18px;
         padding: 0px;
         display: block;
@@ -323,6 +322,7 @@ input[type="checkbox"]{
     .menu-bar ul li:nth-child(8){
         transform: translateX(-500px);
     }
+    
     .menu-bar .bar{
         display: block;
         position: absolute;
@@ -1852,7 +1852,7 @@ nav ul li a{
     }
 
     .navbar-nav {
-        margin-bottom: 0px !important;
+        margin-bottom: 25px !important;
     }
 
     .search-box input {
